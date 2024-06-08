@@ -1,0 +1,15 @@
+---
+const { title, href, bg, icon } = Astro.props;
+import { Icon } from "astro-icon/components";
+
+const dynamicStyles = {
+  true: "flex w-fit items-center text-font-paragraph text-white tracking-tight font-medium text-sm bg-indigo-600 py-2 px-3 rounded-lg",
+  false:
+    "flex w-fit items-center text-font-paragraph text-paragraph gap-2 tracking-tight font-medium text-sm py-2 px-3 rounded-lg",
+};
+---
+
+<a href={href} class={dynamicStyles[bg]}>
+  {title}
+  {icon && <Icon name={icon} color="#C9CCD2" size={16} />}
+</a>

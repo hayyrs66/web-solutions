@@ -1,0 +1,66 @@
+---
+import { defaultStyles } from "@styles/index";
+---
+
+<section class="flex flex-col justify-center items-center w-full px-[4rem]">
+  <!-- Gradient top bar -->
+  <div
+    class="w-[600px] h-[1px] bg-gradient-to-r from-[#16161B] via-[#8844FF] to-[#16161B]"
+  >
+  </div>
+  <!-- / Gradient top bar -->
+
+  <!-- Title section -->
+  <div
+    class="flex w-full justify-center items-center flex-col mt-[5rem] [&>h2]:text-4xl [&>h2]:font-semibold [&>h2]:tracking-tight"
+  >
+    <h2 class="text-white">Redefine Tu Presencia</h2>
+    <h2 class="text-secondary">Digital</h2>
+    <p class={defaultStyles.heroParagraph}>
+      Explore our essential tools for seamless website planning and design.
+      Elevate your workflow with intuitive features and powerful capabilities.
+    </p>
+  </div>
+  <!-- / Title section -->
+
+  <!-- Grid -->
+  <div class="grid grid-cols-3 w-full mt-[4rem]">
+    <!-- GRID 1 -->
+    <div class="flex flex-col justify-center items-center">
+      <div class="flex flex-col w-full justify-center items-center gap-4">
+        <span class={defaultStyles.subtitleBtn}>Navigate</span>
+        <h3 class={defaultStyles.title}>Sitemaps</h3>
+        <p class={defaultStyles.paragraph}>
+          Revolutionize your design workflow with our visual sitemap planner.
+          Effortlessly create clear structures and customize page templates.
+        </p>
+      </div>
+      <img src="grid1.png" alt="" class="mt-8" />
+    </div>
+    <!-- GRID 2 -->
+    <div class="flex flex-col justify-center items-center">
+      <div class="flex flex-col w-full justify-center items-center gap-4">
+        <span class={defaultStyles.subtitleBtn}>Innovate</span>
+        <h3 class={defaultStyles.title}>Wireframes</h3>
+        <p class={defaultStyles.paragraph}>
+          Streamline your design process with our wireframing tool. Create clear
+          and preciselayouts, bringing your ideas to life seamlessly.
+        </p>
+      </div>
+      <img src="grid2.png" alt="" class="mt-8" />
+    </div>
+    <!-- GRID 3 -->
+    <div class="flex flex-col justify-center items-center">
+      <div class="flex flex-col w-full justify-center items-center gap-4">
+        <span class={defaultStyles.subtitleBtn}>Inspire</span>
+        <h3 class={defaultStyles.title}>Whiteboard</h3>
+        <p class={defaultStyles.paragraph}>
+          Visualize your ideas with our whiteboard tool. Collaborate in
+          real-time and bring concepts to life with ease.
+        </p>
+      </div>
+      <img src="grid3.png" alt="" class="mt-8" />
+    </div>
+  </div>
+  <!-- / Grid -->
+</section>

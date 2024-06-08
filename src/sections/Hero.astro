@@ -1,0 +1,49 @@
+---
+import LinkButton from "@components/LinkButton.astro";
+import { defaultStyles } from "@styles/index";
+---
+
+<section class="w-full h-screen flex flex-col justify-center items-center">
+  <!-- Effects -->
+  <img
+    class="absolute top-0 left-0 -z-10 opacity-30"
+    src="elipse.png"
+    alt="elipse gradient effect"
+  />
+  <!--  /Effects -->
+
+  <!-- Center hero -->
+  <div
+    class="flex flex-col items-center [&>h3]:text-white [&>h3]:font-semibold [&>h3]:text-5xl
+     [&>h3]:tracking-tight"
+  >
+    <h3 class="mb-4">Convertimos ideas en</h3>
+    <h3 class="leading-none">
+      Sitios Web <span
+        class="text-secondary bg-gradient-to-r from-[#8844FF]/20 to-fuchsia-[#A68AF8]
+        border-l-2 px-2 border-secondary"
+        >impresionantes</span
+      >
+    </h3>
+    <p class={defaultStyles.heroParagraph}>
+      Facilita la creación de tu sitio web con nuestro proceso intuitivo. Damos
+      vida a tus ideas de manera sencilla, con diseños modernos y webs de alta
+      performance.
+    </p>
+
+    <div class="inline-flex gap-5">
+      <LinkButton title="Cotizar tu Sitio Web" href="#" bg={true} />
+      <LinkButton
+        title="Descubre cómo funciona"
+        href="#"
+        bg={false}
+        icon="right-arrow"
+      />
+    </div>
+  </div>
+  <!-- /Center hero -->
+
+  <!-- Hero Showcase -->
+  <di class="mt-8"> </di>
+  <!-- /Hero Showcase -->
+</section>
