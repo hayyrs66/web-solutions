@@ -5,8 +5,8 @@ export default {
 		extend: {
 			colors: {
 				'bg-primary': "#161C28",
-				'primary': "#7A15FF",
-				'secondary': "#BC86FF",
+				'primary': "#00FF7F",
+				'secondary': "#8aff86",
 				'no-select': "#A6A6A6",
 				'paragraph': '#C9CCD2',
 				'gray': "#28282E"
