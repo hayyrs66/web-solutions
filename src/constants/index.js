@@ -1,5 +1,3 @@
-
-
 export const howWeWork = [{
     title: "Recibimos la cotización.",
     paragraph: "Comenzamos recibiendo tu solicitud de cotización, donde detallas tus necesidades y objetivos. Analizamos la información proporcionada para entender mejor tus requerimientos y ofrecerte una propuesta personalizada que se ajuste a tus expectativas",
@@ -22,35 +20,35 @@ export const howWeWork = [{
 
 export const testimonials = [
     {
-        name: "John Doe",
-        position: "CEO, Company Name",
-        image: "https://via.placeholder.com/150",
-        comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        name: "Amanda R.",
+        position: "CEO, InnovateX",
+        image: "profile.png",
+        comment: "El equipo fue increíblemente profesional y entregó un sitio web que superó nuestras expectativas. La atención al detalle y el soporte continuo han sido excepcionales."
     },
     {
-        name: "John Doe",
-        position: "CEO, Company Name",
-        image: "https://via.placeholder.com/150",
-        comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    },{
-        name: "John Doe",
-        position: "CEO, Company Name",
-        image: "https://via.placeholder.com/150",
-        comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    },{
-        name: "John Doe",
-        position: "CEO, Company Name",
-        image: "https://via.placeholder.com/150",
-        comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    },{
-        name: "John Doe",
-        position: "CEO, Company Name",
-        image: "https://via.placeholder.com/150",
-        comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    },{
-        name: "John Doe",
-        position: "CEO, Company Name",
-        image: "https://via.placeholder.com/150",
-        comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        name: "Eric D.",
+        position: "CEO, PixelWorks",
+        image: "profile2.png",
+        comment: "Gracias a su enfoque en SEO, nuestro tráfico web ha aumentado significativamente. Estamos muy satisfechos con los resultados y la eficiencia del equipo."
+    }, {
+        name: "Sarah K.",
+        position: "CEO, DesignHub",
+        image: "profile3.png",
+        comment: "El diseño responsivo ha sido un cambio de juego para nuestro negocio. Ahora nuestros clientes pueden navegar sin problemas desde cualquier dispositivo. ¡Gran trabajo!"
+    }, {
+        name: "Megan H.",
+        position: "CEO, DigitalFoundry",
+        image: "profile4.png",
+        comment: "La experiencia de trabajar con este equipo ha sido fantástica. Desde el primer contacto hasta el lanzamiento del sitio, todo el proceso fue fluido y profesional."
+    }, {
+        name: "Justin P.",
+        position: "CEO, TechSolutions",
+        image: "profile5.png",
+        comment: "Nos ayudaron a crear una presencia en línea sólida con un sitio web personalizado y perfectamente adaptado a nuestras necesidades. Su servicio de mantenimiento ha sido invaluable."
+    }, {
+        name: "Jason T.",
+        position: "CEO, BrandForge",
+        image: "profile6.png",
+        comment: "El equipo no solo creó un sitio web hermoso y funcional, sino que también nos brindó una capacitación completa para gestionarlo. Su soporte post-lanzamiento es excelente."
     }
 ]
