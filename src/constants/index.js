@@ -52,3 +52,18 @@ export const testimonials = [
         comment: "El equipo no solo creó un sitio web hermoso y funcional, sino que también nos brindó una capacitación completa para gestionarlo. Su soporte post-lanzamiento es excelente."
     }
 ]
+
+export const faq = [
+    {
+        title: "¿Cuál es la metodología principal?",
+        paragraph: `Nuestro enfoque principal es crear sitios web a partir de un diseño entregado por parte de los clientes. Sin embargo, también ofrecemos servicios de diseño web personalizados para aquellos que no tienen un diseño previo.`,
+    },
+    {
+        title: "¿Cuál es el proceso de trabajo?",
+        paragraph: `Recibimos tu propuesta y la analizamos. En caso de no tener un diseño previo o necesitar una plataforma/sistema más personalizado, planificaremos una reunión para discutir tus necesidades y objetivos. Luego, comenzamos el proceso de desarrollo, manteniéndote informado en cada etapa mediante un dashboard en donde se notificará el estado de tu proyecto. Finalmente lanzamos tu sitio web y te proporcionamos capacitación y soporte.`,
+    },
+    {
+        title: "¿Qué pasa si tengo un presupuesto ajustado?",
+        paragraph: `Para presupuestos ajustados, ofrecemos paquetes de diseño web predefinidos que se adaptan a diferentes necesidades y presupuestos. Estos no pierden la escencia de un diseño personalizado, pero se ajustan a un precio más accesible sin perder la escencia de un sitio web elegante y con todas las funcionalidades.`
+    },
+]
