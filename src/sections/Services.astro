@@ -10,17 +10,63 @@ import { Icon } from "astro-icon/components";
     <div class="">
       <div class="relative">
         <h4 class={defaultStyles.title + " text-5xl font-light leading-snug"}>
-          No uses plantillas genéricas. Es hora de crear una <span class="bg-primary/20 px-1 py-1 rounded-2xl">identidad.</span>
+          No uses plantillas genéricas. Es hora de crear una <span
+            class="bg-primary/20 px-1 py-1 rounded-2xl">identidad.</span
+          >
         </h4>
-        <img src="line.png" alt="" class="w-[200px] absolute bottom-[-10%] right-[25%]" />
+        <img
+          src="line.png"
+          alt=""
+          class="w-[200px] absolute bottom-[-10%] right-[25%]"
+        />
       </div>
       <p class={defaultStyles.paragraph + " mt-16"}>
-        Nuestros servicios personalizados te permiten tener un sitio web único y atractivo que refleje la esencia de tu marca.
+        Nuestros servicios personalizados te permiten tener un sitio web único y
+        atractivo que refleje la esencia de tu marca.
+      </p>
     </div>
     <!-- Grid container 2 -->
     <div class="">
-      <img src="projects.webp" alt="" class="w-full rounded-xl">
+      <img src="projects.webp" alt="" class="w-full rounded-xl" />
     </div>
   </div>
   <!-- /GRID -->
+
+  <!-- Services GRID Section -->
+  <div class="grid grid-cols-3 w-full mt-[10rem] gap-5">
+    <!-- GRID services container -->
+    <div class="bg-[#EDECEC] px-4 py-4 rounded-xl flex flex-col gap-3">
+      <Icon name="star" size={30} color="#000" />
+      <h3 class={defaultStyles.title}>Desarrollo Web Personalizado</h3>
+      <p class={defaultStyles.paragraph + " text-black/80"}>
+        Creamos sitios web a medida que se adaptan a tus necesidades y
+        objetivos. Si tienes un diseño ya hecho, lo hacemos realidad. Si no, te
+        ayudamos a crear uno desde cero.
+      </p>
+    </div>
+    <!-- GRID services container -->
+
+    <div class="bg-[#B2FCCF] px-4 py-4 rounded-xl flex flex-col gap-3">
+      <Icon name="support" size={30} color="#000" />
+      <h3 class={defaultStyles.title}>Mantenimiento y Soporte</h3>
+      <p class={defaultStyles.paragraph + " text-black/80"}>
+        Estaremos al tanto de actualizaciones, copias de seguridad, y cualquier
+        otro problema técnico que pueda surgir. Nos aseguramos de que tu sitio
+        web esté siempre en funcionamiento.
+      </p>
+    </div>
+    <!-- GRID services container -->
+
+    <div class="bg-[#B2FCCF] px-4 py-4 rounded-xl flex flex-col gap-3">
+      <Icon name="structure" size={30} color="#000" />
+      <h3 class={defaultStyles.title}>Infraestructura Web</h3>
+      <p class={defaultStyles.paragraph + " text-black/80"}>
+        Proporcionamos servicios completos de dominio web, hosting y email para
+        que tu negocio tenga una presencia en línea profesional. Nos encargamos
+        de la gestión técnica para que puedas centrarte en lo que mejor haces,
+        asegurando un rendimiento confiable y accesibilidad constante.
+      </p>
+    </div>
+  </div>
+  <!-- /Services GRID Section -->
 </section>
