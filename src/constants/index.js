@@ -1,4 +1,5 @@
 
+
 export const howWeWork = [{
     title: "Recibimos la cotización.",
     paragraph: "Comenzamos recibiendo tu solicitud de cotización, donde detallas tus necesidades y objetivos. Analizamos la información proporcionada para entender mejor tus requerimientos y ofrecerte una propuesta personalizada que se ajuste a tus expectativas",
@@ -18,3 +19,38 @@ export const howWeWork = [{
     title: "Mantenimiento y Soporte",
     paragraph: "Nuestro trabajo no termina con el lanzamiento. Ofrecemos mantenimiento y soporte continuos para garantizar que tu sitio web se mantenga actualizado y funcione sin problemas.",
 }]
+
+export const testimonials = [
+    {
+        name: "John Doe",
+        position: "CEO, Company Name",
+        image: "https://via.placeholder.com/150",
+        comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        name: "John Doe",
+        position: "CEO, Company Name",
+        image: "https://via.placeholder.com/150",
+        comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },{
+        name: "John Doe",
+        position: "CEO, Company Name",
+        image: "https://via.placeholder.com/150",
+        comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },{
+        name: "John Doe",
+        position: "CEO, Company Name",
+        image: "https://via.placeholder.com/150",
+        comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },{
+        name: "John Doe",
+        position: "CEO, Company Name",
+        image: "https://via.placeholder.com/150",
+        comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },{
+        name: "John Doe",
+        position: "CEO, Company Name",
+        image: "https://via.placeholder.com/150",
+        comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    }
+]
