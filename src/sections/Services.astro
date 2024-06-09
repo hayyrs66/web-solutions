@@ -11,7 +11,7 @@ import { howWeWork } from "@constants/index";
     <!-- Grid container 1 -->
     <div class="">
       <div class="relative">
-        <h4 class={defaultStyles.title + " text-5xl font-light leading-snug"}>
+        <h4 class="text-black text-5xl font-light tracking-tight leading-snug">
           No uses plantillas genéricas. Es hora de crear una <span
             class="bg-primary/20 px-1 py-1 rounded-2xl">identidad.</span
           >
@@ -78,27 +78,23 @@ import { howWeWork } from "@constants/index";
   <!-- WHAT WE DO SECTION -->
   <section class="w-full rounded-xl mt-[6rem]">
     <!-- GRID WHAT WE DO SECTION -->
-    <div class="grid w-full grid-cols-2 gap-8">
-      <div class="w-full h-fit bg-white px-8 py-8 rounded-xl">
-        <h4 class={defaultStyles.title}>¿Cómo trabajamos?</h4>
-        <p class={defaultStyles.paragraph + " mt-4 max-w-[50ch]"}>
-          Nuestro proceso de trabajo sigue una línea de tiempo bien definida,
-          que incluye desde la recepción de tu cotización hasta el mantenimiento
-          y soporte continuo. Cada etapa está diseñada para garantizar un
-          resultado final de alta calidad y acorde a tus necesidades.
-        </p>
-      </div>
+    <div class="w-full">
       <!-- Timeline component -->
       <div class="relative w-full h-full">
         <!-- long line -->
         <div
-          class="w-[0.5px] h-full border border-primary border-dashed absolute top-0 left-[0.6%]"
+          class="w-[0.5px] h-full border border-primary border-dashed absolute top-0 left-[0.35%]"
         >
         </div>
         <!-- /long line -->
         {
-          howWeWork.map((item) => (
-            <Timeline title={item.title} paragraph={item.paragraph} />
+          howWeWork.map((item, index) => (
+            <Timeline
+              title={item.title}
+              paragraph={item.paragraph}
+              index={index}
+              lastIndex={howWeWork.length - 1}
+            />
           ))
         }
       </div>
