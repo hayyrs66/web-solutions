@@ -1,19 +1,21 @@
 ---
 import { defaultStyles } from "@styles/index";
 
-const { title, paragraph } = Astro.props;
-
+const { title, paragraph, index, lastIndex } = Astro.props;
 ---
 
 <div class="w-full">
   <!-- Dot -->
-  <div class="flex gap-8  mt-4">
-    <div class="w-[10px] h-[10px] bg-primary rounded-full z-10"></div>
+  <div class="flex gap-8 mt-4">
+    <div
+      class={`w-[10px] h-[10px] bg-primary rounded-full z-10 ${index === lastIndex ? "animate-pulse" : ""}`}
+    >
+    </div>
     <div class="flex flex-col w-full justify-center">
       <h4 class={defaultStyles.title + " text-lg text-black/90"}>
         {title}
       </h4>
-      <p class={defaultStyles.paragraph + " max-w-[50ch] mb-8"}>
+      <p class={defaultStyles.paragraph + " max-w-[50ch] mt-4 mb-8"}>
         {paragraph}
       </p>
     </div>
