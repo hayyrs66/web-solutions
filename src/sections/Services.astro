@@ -1,6 +1,8 @@
 ---
 import { defaultStyles } from "@styles/index";
 import { Icon } from "astro-icon/components";
+import Timeline from "@components/Timeline.astro";
+import { howWeWork } from "@constants/index";
 ---
 
 <section class="w-full px-[4rem] mt-[5rem] pb-[10rem]">
@@ -22,7 +24,8 @@ import { Icon } from "astro-icon/components";
       </div>
       <p class={defaultStyles.paragraph + " mt-16"}>
         Nuestros servicios personalizados te permiten tener un sitio web único y
-        atractivo que refleje la esencia de tu marca.
+        atractivo que refle <!-- Timeline component -->
+        je la esencia de tu marca.
       </p>
     </div>
     <!-- Grid container 2 -->
@@ -57,7 +60,7 @@ import { Icon } from "astro-icon/components";
     </div>
     <!-- GRID services container -->
 
-    <div class="bg-[#B2FCCF] px-4 py-4 rounded-xl flex flex-col gap-3">
+    <div class="bg-primary px-4 py-4 rounded-xl flex flex-col gap-3">
       <Icon name="structure" size={30} color="#000" />
       <h3 class={defaultStyles.title}>Infraestructura Web</h3>
       <p class={defaultStyles.paragraph + " text-black/80"}>
@@ -68,5 +71,44 @@ import { Icon } from "astro-icon/components";
       </p>
     </div>
   </div>
+  <!-- Timeline component -->
+
   <!-- /Services GRID Section -->
+
+  <!-- WHAT WE DO SECTION -->
+  <section class="w-full rounded-xl mt-[6rem]">
+    <!-- GRID WHAT WE DO SECTION -->
+    <div class="grid w-full grid-cols-2">
+      <div class="">
+        <h4 class={defaultStyles.title}>¿Cómo trabajamos?</h4>
+        <p class={defaultStyles.paragraph + " mt-4 max-w-[50ch]"}>
+          Nuestro proceso de trabajo sigue una línea de tiempo bien definida,
+          que incluye desde la recepción de tu cotización hasta el mantenimiento
+          y soporte continuo. Cada etapa está diseñada para garantizar un
+          resultado final de alta calidad y acorde a tus necesidades.
+        </p>
+        <div class="w-full flex justify-center mt-12">
+          <img src="process.svg" alt="" class="w-[200px]" />
+        </div>
+      </div>
+      <!-- Timeline component -->
+      <div class="relative">
+        <!-- long line -->
+        <div
+          class="w-[0.5px] h-full border mx-8 my-8 border-primary border-dashed absolute top-0 left-[0.6%]"
+        >
+        </div>
+        <!-- /long line -->
+
+        {
+          howWeWork.map((item) => (
+            <Timeline title={item.title} paragraph={item.paragraph} />
+          ))
+        }
+      </div>
+      <!-- /Timeline component -->
+    </div>
+    <!-- /GRID WHAT WE DO SECTION -->
+  </section>
+  <!-- /WHAT WE DO SECTION -->
 </section>
