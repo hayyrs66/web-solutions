@@ -3,16 +3,17 @@ import { defaultStyles } from "@styles/index";
 import { testimonials } from "@constants/index";
 ---
 
-<section class="w-full bg-[#101111] p-[4rem]">
+<section class="w-full bg-[#101111]">
   <span class={defaultStyles.subtitleBtn}>Clientes</span>
-  <h4 class="text-white text-5xl font-semibold tracking-tight mt-8">
+  <h4 class="text-white font-semibold text-5xl
+     tracking-tight mt-8">
     ¿Qué dicen sobre nosotros?
   </h4>
   <!-- Testimonial GRID -->
   <div class="grid grid-cols-3 gap-4 w-full mt-8">
     {
       testimonials.map((item, index) => (
-        <div class="bg-[#1d1f1f] p-6 rounded-lg">
+        <div class="bg-[#1d1f1f] px-6 py-4 rounded-lg">
           {/* profile */}
           <div class="flex gap-2 items-center">
             <img src={item.image} alt={item.name} />
