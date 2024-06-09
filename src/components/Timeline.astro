@@ -1,0 +1,22 @@
+---
+import { defaultStyles } from "@styles/index";
+
+const { title, paragraph } = Astro.props;
+
+---
+
+<div class="w-full bg-white px-8 py-8 rounded-xl">
+  <!-- Dot -->
+  <div class="flex gap-8  mt-4">
+    <div class="w-[10px] h-[10px] bg-primary rounded-full z-10"></div>
+    <div class="flex flex-col w-full justify-center">
+      <h4 class={defaultStyles.title + " text-lg text-black/90"}>
+        {title}
+      </h4>
+      <p class={defaultStyles.paragraph + " max-w-[50ch]"}>
+        {paragraph}
+      </p>
+    </div>
+  </div>
+  <!-- /Dot -->
+</div>
