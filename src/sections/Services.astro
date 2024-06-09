@@ -78,8 +78,8 @@ import { howWeWork } from "@constants/index";
   <!-- WHAT WE DO SECTION -->
   <section class="w-full rounded-xl mt-[6rem]">
     <!-- GRID WHAT WE DO SECTION -->
-    <div class="grid w-full grid-cols-2">
-      <div class="">
+    <div class="grid w-full grid-cols-2 gap-8">
+      <div class="w-full h-fit bg-white px-8 py-8 rounded-xl">
         <h4 class={defaultStyles.title}>¿Cómo trabajamos?</h4>
         <p class={defaultStyles.paragraph + " mt-4 max-w-[50ch]"}>
           Nuestro proceso de trabajo sigue una línea de tiempo bien definida,
@@ -87,19 +87,15 @@ import { howWeWork } from "@constants/index";
           y soporte continuo. Cada etapa está diseñada para garantizar un
           resultado final de alta calidad y acorde a tus necesidades.
         </p>
-        <div class="w-full flex justify-center mt-12">
-          <img src="process.svg" alt="" class="w-[200px]" />
-        </div>
       </div>
       <!-- Timeline component -->
-      <div class="relative">
+      <div class="relative w-full h-full">
         <!-- long line -->
         <div
-          class="w-[0.5px] h-full border mx-8 my-8 border-primary border-dashed absolute top-0 left-[0.6%]"
+          class="w-[0.5px] h-full border border-primary border-dashed absolute top-0 left-[0.6%]"
         >
         </div>
         <!-- /long line -->
-
         {
           howWeWork.map((item) => (
             <Timeline title={item.title} paragraph={item.paragraph} />
