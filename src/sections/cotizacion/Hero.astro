@@ -1,6 +1,8 @@
 ---
 import { defaultStyles } from "@styles/index";
 import { Icon } from "astro-icon/components";
+import "@fontsource-variable/inter";
+
 ---
 
 <section
@@ -42,8 +44,8 @@ import { Icon } from "astro-icon/components";
           >
             Presupuesto base.
           </label>
-          <selectG
-            class="bg-primary/50 text-white outline-none border-none py-2 px-1 
+          <select
+            class="bg-black/50 text-white outline-none border-none py-2 px-1 
             [&>option]:bg-black/80 [&>option]:outline-none 
             [&>option]:border-none [&>option]:text-white"
             name="amounts"
