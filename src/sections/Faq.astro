@@ -1,0 +1,29 @@
+---
+import { defaultStyles } from "@styles/index";
+import Accordion from "@components/Accordion.astro";
+---
+
+<section class="flex flex-col w-full justify-center items-center mt-12 pb-[5rem]">
+  <!-- Gradient top bar -->
+  <div
+    class="w-[600px] h-[2px] bg-gradient-to-r from-[#16161B]/0 via-primary to-[#16161B]/0"/>
+  <!-- / Gradient top bar -->
+
+  <!-- Title section -->
+  <div
+    class="flex w-full justify-center items-center flex-col mt-[4rem] [&>h2]:text-4xl [&>h2]:font-semibold [&>h2]:tracking-tight"
+  >
+    <h2 class="text-white">
+      Preguntas más <span class="text-primary">frecuentes</span>
+    </h2>
+    <p class={defaultStyles.heroParagraph}>
+      Descubre las dudas más comunes que nuestros clientes tienen sobre nuestros
+      servicios.
+    </p>
+  </div>
+  <!-- / Title section -->
+
+  <!-- Accordion -->
+    <Accordion />
+  <!-- /Accordion -->
+</section>

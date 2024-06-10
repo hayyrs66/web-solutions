@@ -1,0 +1,54 @@
+---
+import { defaultStyles } from "@styles/index";
+import { Icon } from "astro-icon/components";
+import { faq } from "@constants/index"
+---
+
+<div class="">
+  <div class="max-w-2xl mx-auto">
+    <div class="rounded-xl">
+      {faq.map((item, index) => (
+      <!-- Header -->
+      <div
+        class="accordion-header py-4 px-6 cursor-pointer flex items-center justify-between border-b border-b-white/10"
+      >
+        <span class="font-medium text-lg tracking-tight text-white">
+            {item.title}
+          </span>
+        <Icon class="down-arrow" name="down" size={20} color="#fff" />
+      </div>
+      <!-- /Header -->
+      <!-- Footer -->
+      <div class="max-h-0 overflow-hidden transition-all duration-200 ease-out">
+        <div class="px-6 py-4">
+          <p class="text-font-paragraph font-normal leading-snug text-white/60 text-balance">
+            {item.paragraph}
+          </p>
+        </div>
+      </div>
+      <!-- /Footer -->  
+      ))}
+    </div>
+  </div>
+</div>
+
+<script>
+  const accordionHeader = document.querySelectorAll(".accordion-header");
+
+  accordionHeader.forEach((accordionHeader) => {
+    accordionHeader.addEventListener("click", (e) => {
+      accordionHeader.classList.toggle("active");
+
+      const accordionBody = accordionHeader.nextElementSibling;
+      const icon = accordionHeader.querySelector(".down-arrow"); // select the icon within the clicked header
+
+      if (accordionHeader.classList.contains("active")) {
+        accordionBody.style.maxHeight = accordionBody.scrollHeight + "px";
+        icon.style.transform = "rotate(180deg)"; // rotate the icon 180 degrees
+      } else {
+        accordionBody.style.maxHeight = 0;
+        icon.style.transform = "rotate(0deg)"; // reset the rotation
+      }
+    });
+  });
+</script>

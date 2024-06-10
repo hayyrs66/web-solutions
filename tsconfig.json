@@ -5,7 +5,10 @@
     "paths": {
       "@components/*": ["src/components/*"],
       "@sections/*": ["src/sections/*"],
+      "@cotizacionSections/*": ["src/sections/cotizacion/*"],
       "@styles/*": ["src/styles/*"],
+      "@constants/*": ["src/constants/*"],
+      "@layouts/*": ["src/layouts/*"],
     }
   }
 }

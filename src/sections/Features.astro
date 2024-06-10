@@ -2,64 +2,67 @@
 import { defaultStyles } from "@styles/index";
 ---
 
-<section class="flex flex-col justify-center items-center w-full px-[4rem]">
+<section class="flex flex-col justify-center items-center w-full">
   <!-- Gradient top bar -->
   <div
-    class="w-[600px] h-[1px] bg-gradient-to-r from-[#16161B] via-[#8844FF] to-[#16161B]"
+    class="w-[600px] h-[2px] bg-gradient-to-r from-[#16161B]/0 via-primary to-[#16161B]/0"
   >
   </div>
   <!-- / Gradient top bar -->
 
   <!-- Title section -->
   <div
-    class="flex w-full justify-center items-center flex-col mt-[5rem] [&>h2]:text-4xl [&>h2]:font-semibold [&>h2]:tracking-tight"
+    class="flex w-full justify-center items-center flex-col mt-[4rem] [&>h2]:text-4xl [&>h2]:font-semibold [&>h2]:tracking-tight"
   >
-    <h2 class="text-white">Redefine Tu Presencia</h2>
-    <h2 class="text-secondary">Digital</h2>
+    <h2 class="text-white">
+      Impulsa Tu Presencia <span class="text-primary">Digital</span>
+    </h2>
     <p class={defaultStyles.heroParagraph}>
-      Explore our essential tools for seamless website planning and design.
-      Elevate your workflow with intuitive features and powerful capabilities.
+      Descubre las características innovadoras que nuestros sitios web ofrecen
+      para fortalecer tu visibilidad en línea y atraer a más clientes
     </p>
   </div>
   <!-- / Title section -->
 
   <!-- Grid -->
-  <div class="grid grid-cols-3 w-full mt-[4rem]">
+  <div class="grid grid-cols-3 w-full mt-[4rem] gap-4">
     <!-- GRID 1 -->
-    <div class="flex flex-col justify-center items-center">
-      <div class="flex flex-col w-full justify-center items-center gap-4">
-        <span class={defaultStyles.subtitleBtn}>Navigate</span>
-        <h3 class={defaultStyles.title}>Sitemaps</h3>
-        <p class={defaultStyles.paragraph}>
-          Revolutionize your design workflow with our visual sitemap planner.
-          Effortlessly create clear structures and customize page templates.
+    <div class="flex flex-col justify-center items-center px-4 py-4 bg-primary/5 rounded-xl">
+      <div class="flex flex-col w-full items-center gap-4">
+        <span class={defaultStyles.subtitleBtn}>Performance</span>
+        <h3 class={defaultStyles.title}>Máximo Rendimiento</h3>
+        <p class={defaultStyles.paragraph + " text-center"}>
+          Nuestros sitios web están optimizados para cargar rápidamente y
+          funcionar sin problemas, garantizando una experiencia de usuario
+          superior.
         </p>
       </div>
-      <img src="grid1.png" alt="" class="mt-8" />
+      <img src="performance.svg" alt="" class="mt-8 w-[250px]" />
     </div>
-    <!-- GRID 2 -->
-    <div class="flex flex-col justify-center items-center">
-      <div class="flex flex-col w-full justify-center items-center gap-4">
-        <span class={defaultStyles.subtitleBtn}>Innovate</span>
-        <h3 class={defaultStyles.title}>Wireframes</h3>
-        <p class={defaultStyles.paragraph}>
-          Streamline your design process with our wireframing tool. Create clear
-          and preciselayouts, bringing your ideas to life seamlessly.
+     <!-- GRID 2 -->
+     <div class="flex flex-col justify-center items-center px-4 py-4 bg-primary/5 rounded-xl">
+      <div class="flex flex-col w-full items-center gap-4">
+        <span class={defaultStyles.subtitleBtn}>SEO Avanzado</span>
+        <h3 class={defaultStyles.title}>Visibilidad en la Web</h3>
+        <p class={defaultStyles.paragraph + " text-center"}>
+          Implementamos estrategias avanzadas de SEO para asegurar que tu sitio
+          web sea fácilmente encontrado por tus clientes potenciales.
         </p>
       </div>
-      <img src="grid2.png" alt="" class="mt-8" />
+      <img src="seo.svg" alt="" class="mt-8 w-[250px]" />
     </div>
     <!-- GRID 3 -->
-    <div class="flex flex-col justify-center items-center">
-      <div class="flex flex-col w-full justify-center items-center gap-4">
-        <span class={defaultStyles.subtitleBtn}>Inspire</span>
-        <h3 class={defaultStyles.title}>Whiteboard</h3>
-        <p class={defaultStyles.paragraph}>
-          Visualize your ideas with our whiteboard tool. Collaborate in
-          real-time and bring concepts to life with ease.
+    <div class="flex flex-col justify-center items-center px-4 py-4 bg-primary/5 rounded-xl">
+      <div class="flex flex-col w-full items-center gap-4">
+        <span class={defaultStyles.subtitleBtn}>Responsive</span>
+        <h3 class={defaultStyles.title}>Diseño Responsivo</h3>
+        <p class={defaultStyles.paragraph + " text-center"}>
+          Nuestros sitios web se adaptan a cualquier dispositivo, ofreciendo una
+          experiencia de navegación impecable en computadoras, tablets y
+          smartphones.
         </p>
       </div>
-      <img src="grid3.png" alt="" class="mt-8" />
+      <img src="responsive.svg" alt="" class="mt-8 w-[250px]" />
     </div>
   </div>
   <!-- / Grid -->

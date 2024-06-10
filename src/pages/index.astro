@@ -1,12 +1,18 @@
 ---
 import Hero from "@sections/Hero.astro";
-import Layout from "../layouts/Layout.astro";
+import Layout from "@layouts/Layout.astro";
 import Features from "@sections/Features.astro";
+import Services from "@sections/Services.astro";
+import Testimonials from "@sections/Testimonials.astro";
+import Faq from "@sections/Faq.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-  <main>
+  <main class="w-full px-[5rem]">
     <Hero />
     <Features />
+    <Services />
+    <!-- <Testimonials /> -->
+    <Faq />
   </main>
 </Layout>

@@ -1,0 +1,112 @@
+---
+import { defaultStyles } from "@styles/index";
+import { Icon } from "astro-icon/components";
+import Timeline from "@components/Timeline.astro";
+import { howWeWork } from "@constants/index";
+---
+
+<section class="w-full mt-[10rem] pb-[5rem]">
+  <!-- GRID -->
+  <div class="w-full grid grid-cols-2 gap-12">
+    <!-- Grid container 1 -->
+    <div class="">
+      <div class="relative">
+        <h4 class="text-white font-semibold text-5xl
+     tracking-tight leading-snug">
+          No uses plantillas genéricas. Es hora de crear una <span
+            class="bg-primary/5 text-primary px-1 py-1 rounded-2xl">identidad.</span
+          >
+        </h4>
+        <img
+          src="line.png"
+          alt=""
+          class="w-[200px] absolute bottom-[-10%] right-[25%]"
+        />
+      </div>
+      <p class={defaultStyles.paragraph + " mt-16"}>
+        Nuestros servicios personalizados te permiten tener un sitio web único y
+        atractivo que refle <!-- Timeline component -->
+        je la esencia de tu marca.
+      </p>
+    </div>
+    <!-- Grid container 2 -->
+    <div class="">
+      <img src="projects.webp" alt="" class="w-full rounded-xl" />
+    </div>
+  </div>
+  <!-- /GRID -->
+
+  <!-- Services GRID Section -->
+  <div class="grid grid-cols-3 w-full mt-[10rem] gap-5">
+    <!-- GRID services container -->
+    <div class="bg-primary/20 px-4 py-4 rounded-xl flex flex-col gap-3">
+      <Icon name="star" size={30} color="#00FF7F" />
+      <h3 class={defaultStyles.title}>Desarrollo Web Personalizado</h3>
+      <p class={defaultStyles.paragraph}>
+        Creamos sitios web a medida que se adaptan a tus necesidades y
+        objetivos. Si tienes un diseño ya hecho, lo hacemos realidad. Si no, te
+        ayudamos a crear uno desde cero.
+      </p>
+    </div>
+    <!-- GRID services container -->
+
+    <div class="bg-primary/5 px-4 py-4 rounded-xl flex flex-col gap-3">
+      <Icon name="support" size={30} color="#00FF7F" />
+      <h3 class={defaultStyles.title}>Mantenimiento y Soporte</h3>
+      <p class={defaultStyles.paragraph}>
+        Estaremos al tanto de actualizaciones, copias de seguridad, y cualquier
+        otro problema técnico que pueda surgir. Nos aseguramos de que tu sitio
+        web esté siempre en funcionamiento.
+      </p>
+    </div>
+    <!-- GRID services container -->
+
+    <div class="bg-primary/5 px-4 py-4 rounded-xl flex flex-col gap-3">
+      <Icon name="structure" size={30} color="#00FF7F" />
+      <h3 class={defaultStyles.title}>Infraestructura Web</h3>
+      <p class={defaultStyles.paragraph}>
+        Proporcionamos servicios completos de dominio web, hosting y email para
+        que tu negocio tenga una presencia en línea profesional. Nos encargamos
+        de la gestión técnica para que puedas centrarte en lo que mejor haces,
+        asegurando un rendimiento confiable y accesibilidad constante.
+      </p>
+    </div>
+  </div>
+  <!-- Timeline component -->
+
+  <!-- /Services GRID Section -->
+
+  <!-- WHAT WE DO SECTION -->
+  {
+    /* 
+   
+  <section class="w-full rounded-xl mt-[6rem]">
+    <!-- GRID WHAT WE DO SECTION -->
+    <div class="w-full">
+      <!-- Timeline component -->
+      <div class="relative w-full h-full">
+        <!-- long line -->
+        <div
+          class="w-[0.5px] h-full border border-primary border-dashed absolute top-0 left-[0.35%]"
+        >
+        </div>
+        <!-- /long line -->
+        {
+          howWeWork.map((item, index) => (
+            <Timeline
+              title={item.title}
+              paragraph={item.paragraph}
+              index={index}
+              lastIndex={howWeWork.length - 1}
+            />
+          ))
+        }
+      </div>
+      <!-- /Timeline component -->
+    </div>
+    <!-- /GRID WHAT WE DO SECTION -->
+  </section>
+   */
+  }
+  <!-- /WHAT WE DO SECTION -->
+</section>
